@@ -4,12 +4,52 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'navegacao',
+    loadChildren: () => import('./pages/navegacao/navegacao.module').then( m => m.NavegacaoPageModule)
+  },
+  {
+    path: 'navegacao2',
+    loadChildren: () => import('./pages/navegacao2/navegacao2.module').then( m => m.Navegacao2PageModule)
+  },
+  {
+    path: 'botao',
+    loadChildren: () => import('./pages/botao/botao.module').then( m => m.BotaoPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'alerta',
+    loadChildren: () => import('./pages/alerta/alerta.module').then( m => m.AlertaPageModule)
+  },
+  {
+    path: 'actionSheet',
+    loadChildren: () => import('./pages/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
+  },
+  {
+    path: 'badge',
+    loadChildren: () => import('./pages/badge/badge.module').then( m => m.BadgePageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'checkbox',
+    loadChildren: () => import('./pages/check-box/check-box.module').then( m => m.CheckBoxPageModule)
+  },
+  {
+    path: 'chip',
+    loadChildren: () => import('./pages/chip/chip.module').then( m => m.ChipPageModule)
+  },
+  {
+    path: 'content',
+    loadChildren: () => import('./pages/content/content.module').then( m => m.ContentPageModule)
   }
 ];
 

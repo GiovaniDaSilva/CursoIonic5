@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+      <ion-menu-button></ion-menu-button>   
+    </ion-buttons>
+    <ion-title>Badge</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<h3>Apenas badge simples</h3>
+  <!-- Default -->
+<ion-badge>99</ion-badge>
+
+<h3>badge com temas</h3>
+<!-- Colors -->
+<ion-badge color="primary">11</ion-badge>
+<ion-badge color="secondary">22</ion-badge>
+<ion-badge color="tertiary">33</ion-badge>
+<ion-badge color="success">44</ion-badge>
+<ion-badge color="warning">55</ion-badge>
+<ion-badge color="danger">66</ion-badge>
+<ion-badge color="light">77</ion-badge>
+<ion-badge color="medium">88</ion-badge>
+<ion-badge color="dark">99</ion-badge>
+
+<h3>Posição do badge</h3>
+<!-- Item with badge on left and right -->
+<ion-item>
+  <ion-badge slot="start">11</ion-badge>  
+  <ion-label>Badge Inicio no Fim</ion-label>  
+  <ion-badge slot="end">22</ion-badge>
+</ion-item>
+
+<h3>badge dinamico</h3>
+<ion-item>
+  <ion-label>Notificações</ion-label>
+  <ion-badge color="danger">{{notificacoes}}</ion-badge>
+</ion-item>
+
+</ion-content>
