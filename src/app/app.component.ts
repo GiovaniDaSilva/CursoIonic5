@@ -72,6 +72,11 @@ export class AppComponent implements OnInit {
       url: 'fab',
       icon: 'ellipsis-horizontal-circle'
     },
+    {
+      title: 'Grid',
+      url: 'grid',
+      icon: 'apps'
+    },
   ];
   
   public labels = ['Label 1', 'Label 2', 'Label 3']
