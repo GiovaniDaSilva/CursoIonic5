@@ -8,17 +8,25 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content
-  [scrollEvents]="true"
+<!--Titulo fixo e centralizado-->
+<div slot="fixed" class="ion-text-center">
+  <h1 position="center" >Trabalhando com Scroll</h1>
+</div>  
 
+<ion-content [scrollEvents]="true" 
+  (ionScrollStart)="logScrollStart()" 
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
 
->
-  
-  <div slot="fixed">
-    <h1>Meu Titulo</h1>
-  </div>
-
+  <h2>Lista Fixa</h2>  
   <ion-list>
+    <ion-button expand="block" fill="outline" (click)="inicioScroll()" >Final do Scroll</ion-button>
+    <ion-item>
+      <ion-label>Ionic 5</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ionic 5</ion-label>
+    </ion-item>  
     <ion-item>
       <ion-label>Ionic 5</ion-label>
     </ion-item>
@@ -46,35 +54,18 @@
     <ion-item>
       <ion-label>Ionic 5</ion-label>
     </ion-item>
-    <ion-item>
-      <ion-label>Ionic 5</ion-label>
+
+    <ion-button expand="block" fill="outline" (click)="finalScroll()">Inicio do Scroll</ion-button>
+  </ion-list>  
+
+
+  <h2>Lista Dinamica</h2>  
+  <ion-list>
+    <ion-button expand="block" fill="outline" (click)="inicioScroll()" >Final do Scroll</ion-button>
+    <ion-item *ngFor="let item of lista">
+      <ion-label>Item {{item}}</ion-label>      
     </ion-item>
-    <ion-item>
-      <ion-label>Ionic 5</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Ionic 5</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Ionic 5</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Ionic 5</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Ionic 5</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Ionic 5</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Ionic 5</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Ionic 5</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Ionic 5</ion-label>
-    </ion-item>
-  </ion-list>
+    <ion-button expand="block" fill="outline" (click)="finalScroll()">Inicio do Scroll</ion-button>
+  </ion-list>  
+  
 </ion-content>
