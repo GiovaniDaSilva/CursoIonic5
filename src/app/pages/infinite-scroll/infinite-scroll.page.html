@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Infinite Scroll</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  
+  <ion-button (click)="toggleInfiniteScroll()" expand="block">
+    Habilita/Desabilita Infinite Scroll
+  </ion-button>
+
+  <ion-list>
+    <!--slice:0:variavel  limita que o for vá de 0 a limite da variavel -->
+      <ion-item *ngFor="let numero of numeros | slice:0:limit">
+          <ion-label color="dark">Item da Lista Numero:{{numero}} </ion-label>
+      </ion-item>
+  </ion-list>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Carregando mais itens...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>
