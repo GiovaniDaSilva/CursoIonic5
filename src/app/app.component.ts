@@ -92,6 +92,16 @@ export class AppComponent implements OnInit {
       url: 'list',
       icon: 'list'
     },
+    {
+      title: 'Progress bar',
+      url: 'progress-bar',
+      icon: 'repeat'
+    },
+    {
+      title: 'Refresher',
+      url: 'refresher',
+      icon: 'sync'
+    },
   ];
   
   public labels = ['Label 1', 'Label 2', 'Label 3']

@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Progress Bar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Padrão sem valor</h3>
+<!-- Default Progressbar -->
+<ion-progress-bar></ion-progress-bar>
+
+<h3>50%</h3>
+<!-- Default Progressbar with 50 percent -->
+<ion-progress-bar value="0.5"></ion-progress-bar>
+
+<h3>50% com tema</h3>
+<!-- Colorize Progressbar -->
+<h4>danger</h4>
+<ion-progress-bar color="danger" value="0.5"></ion-progress-bar>
+<h4>dark</h4>
+<ion-progress-bar color="dark" value="0.5"></ion-progress-bar>
+
+<h3>Buffer</h3>
+<!-- Other types -->
+<ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+
+<h3>Indeterminado</h3>
+<h4>normal</h4>
+<ion-progress-bar type="indeterminate"></ion-progress-bar>
+<h4>reverso</h4>
+<ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+
+
+<h2>Processando no click</h2>
+<ion-button expand="block" color="danger" (click)="aumentarProgresso()">Aumentar Progresso</ion-button>  
+<ion-progress-bar color="dark" value="{{progress}}"></ion-progress-bar>
+<br><br>
+<ion-progress-bar value="{{progress}}" buffer="0.1"></ion-progress-bar>
+
+</ion-content>
