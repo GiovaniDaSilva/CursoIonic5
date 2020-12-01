@@ -102,6 +102,16 @@ export class AppComponent implements OnInit {
       url: 'refresher',
       icon: 'sync'
     },
+    {
+      title: 'Reorder',
+      url: 'reorder',
+      icon: 'reorder-three'
+    },
+    {
+      title: 'Select',
+      url: 'select',
+      icon: 'reorder-four'
+    },
   ];
   
   public labels = ['Label 1', 'Label 2', 'Label 3']
