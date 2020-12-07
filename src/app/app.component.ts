@@ -112,6 +112,21 @@ export class AppComponent implements OnInit {
       url: 'select',
       icon: 'reorder-four'
     },
+    {
+      title: 'Toggle',
+      url: 'toggle',
+      icon: 'toggle'
+    },
+    {
+      title: 'Searchbar',
+      url: 'searchbar',
+      icon: 'search'
+    },  
+    {
+      title: 'Segment',
+      url: 'segment',
+      icon: 'git-commit'
+    }, 
   ];
   
   public labels = ['Label 1', 'Label 2', 'Label 3']

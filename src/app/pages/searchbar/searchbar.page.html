@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Searchbar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--Não utilizar o ionInput, porque ele não pega a tecla digitada no momento, 
+  apenas na tecla seguinte ele passa a primeira no evento.ion-toggle
+
+  Nesse exemplo, esta utilizando um evento do js, que pode ser utilizado tambem.
+-->
+<ion-toolbar color="secondary">
+  <ion-searchbar color="light" [(ngModel)]="nome" 
+                (keyup)="filtrarItens($event)"></ion-searchbar>
+</ion-toolbar>
+
+<ion-content>
+
+  <h4>Variavel filtro: {{nome}}</h4>
+
+<ion-list>
+  <ion-item *ngFor="let pessoa of pessoasFiltradas">
+    {{pessoa.nome}}
+  </ion-item>
+</ion-list>
+
+
+<h2>Outros exemplos de searchbar</h2>
+<ion-searchbar color="danger"></ion-searchbar>
+
+<ion-searchbar value="valor padrao"></ion-searchbar>
+
+<ion-searchbar type="tel"></ion-searchbar>
+
+<ion-searchbar showCancelButton cancelButtonText="Cancelar Operação"></ion-searchbar>
+
+<ion-searchbar animated placeholder="Buscar"></ion-searchbar>
+
+<ion-searchbar mode="ios"></ion-searchbar>
+
+</ion-content>
