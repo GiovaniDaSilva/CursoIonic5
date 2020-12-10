@@ -127,6 +127,26 @@ export class AppComponent implements OnInit {
       url: 'segment',
       icon: 'git-commit'
     }, 
+    {
+      title: 'Slide',
+      url: 'slide',
+      icon: 'code'
+    }, 
+    {
+      title: 'Toast',
+      url: 'toast',
+      icon: 'information'
+    }, 
+    {
+      title: 'Modal',
+      url: 'modal',
+      icon: 'browsers'
+    }, 
+    {
+      title: 'Popover',
+      url: 'popover',
+      icon: 'menu'
+    }, 
   ];
   
   public labels = ['Label 1', 'Label 2', 'Label 3']
