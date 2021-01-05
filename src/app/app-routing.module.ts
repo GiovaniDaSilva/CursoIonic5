@@ -118,6 +118,18 @@ const routes: Routes = [
   {
     path: 'popover',
     loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'radio',
+    loadChildren: () => import('./pages/radio/radio.module').then( m => m.RadioPageModule)
+  },
+  {
+    path: 'animacao',
+    loadChildren: () => import('./pages/animacao/animacao.module').then( m => m.AnimacaoPageModule)
+  },
+  {
+    path: 'componentes-visuais',
+    loadChildren: () => import('./pages/componentes-visuais/componentes-visuais.module').then( m => m.ComponentesVisuaisPageModule)
   }
 ];
 
