@@ -22,6 +22,11 @@ export class AppComponent implements OnInit {
       url: 'componentes-visuais',
       icon: 'construct'
     }, 
+    {
+      title: 'Componentes Nativos',
+      url: 'componentes-nativos',
+      icon: 'construct'
+    }, 
   ];
   
   public labels = ['Label 1', 'Label 2', 'Label 3']
