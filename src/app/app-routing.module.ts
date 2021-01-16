@@ -146,6 +146,10 @@ const routes: Routes = [
     path: 'flashlight',
     loadChildren: () => import('./pages/nativos/flashlight/flashlight.module').then( m => m.FlashlightPageModule)
   },
+  {
+    path: 'zoom',
+    loadChildren: () => import('./pages/integracao/zoom/zoom.module').then( m => m.ZoomPageModule)
+  },
 
 ];
 

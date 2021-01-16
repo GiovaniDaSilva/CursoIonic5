@@ -27,6 +27,11 @@ export class AppComponent implements OnInit {
       url: 'componentes-nativos',
       icon: 'construct'
     }, 
+    {
+      title: 'Integração Zoom',
+      url: 'zoom',
+      icon: 'construct'
+    }, 
   ];
   
   public labels = ['Label 1', 'Label 2', 'Label 3']
