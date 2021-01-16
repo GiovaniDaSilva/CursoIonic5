@@ -142,7 +142,11 @@ const routes: Routes = [
   {
     path: 'texttospeech',
     loadChildren: () => import('./pages/nativos/texttospeech/texttospeech.module').then( m => m.TexttospeechPageModule)
-  }
+  },   {
+    path: 'flashlight',
+    loadChildren: () => import('./pages/nativos/flashlight/flashlight.module').then( m => m.FlashlightPageModule)
+  },
+
 ];
 
 @NgModule({

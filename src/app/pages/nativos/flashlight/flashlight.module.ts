@@ -1,0 +1,23 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { IonicModule } from '@ionic/angular';
+
+import { FlashlightPageRoutingModule } from './flashlight-routing.module';
+
+import { FlashlightPage } from './flashlight.page';
+
+import { Flashlight } from '@ionic-native/flashlight/ngx';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    FlashlightPageRoutingModule
+  ],
+  declarations: [FlashlightPage],
+  providers:[Flashlight]
+})
+export class FlashlightPageModule {}
