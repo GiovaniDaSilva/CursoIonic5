@@ -8,7 +8,7 @@ import { ZoomPageRoutingModule } from './zoom-routing.module';
 
 import { ZoomPage } from './zoom.page';
 
-//import { Zoom } from '@ionic-native/zoom/ngx';
+import { Zoom } from '@ionic-native/zoom/ngx';
 @NgModule({
   imports: [
     CommonModule,
@@ -17,6 +17,6 @@ import { ZoomPage } from './zoom.page';
     ZoomPageRoutingModule
   ],
   declarations: [ZoomPage],
-//  providers:[Zoom]  
+  providers:[Zoom]  
 })
 export class ZoomPageModule {}
