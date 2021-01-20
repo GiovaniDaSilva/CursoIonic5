@@ -32,6 +32,11 @@ export class AppComponent implements OnInit {
       url: 'zoom',
       icon: 'construct'
     }, 
+    {
+      title: 'API Externa',
+      url: 'api',
+      icon: 'construct'
+    }, 
   ];
   
   public labels = ['Label 1', 'Label 2', 'Label 3']

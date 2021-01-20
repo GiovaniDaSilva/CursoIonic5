@@ -150,6 +150,10 @@ const routes: Routes = [
     path: 'zoom',
     loadChildren: () => import('./pages/integracao/zoom/zoom.module').then( m => m.ZoomPageModule)
   },
+  {
+    path: 'api',
+    loadChildren: () => import('./pages/api/api.module').then( m => m.ApiPageModule)
+  },
 
 ];
 

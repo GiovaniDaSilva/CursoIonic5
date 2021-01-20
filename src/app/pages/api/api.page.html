@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+      <ion-menu-button></ion-menu-button>   
+    </ion-buttons>
+    <ion-title>API Externa</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-item>
+    <ion-label position="floating">Informe seu CEP</ion-label>
+    <ion-input type="text" [(ngModel)]="cep"  placeholder="00000-000"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-button expand="block" (click)="ConsultarCEP()">Consultar</ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>CEP</ion-label>
+    <p>{{resultado.cep}}</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Logradouro</ion-label>
+    <p>{{resultado.logradouro}}</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cidade</ion-label>
+    <p>{{resultado.localidade}}</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Bairro</ion-label>
+    <p>{{resultado.bairro}}</p>
+  </ion-item>
+</ion-content>
